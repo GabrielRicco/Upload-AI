@@ -7,7 +7,11 @@ import { ChangeEvent } from "react";
 
 export function VideoInputForm() {
   function handleFileSelected(event: ChangeEvent<HTMLInputElement>) {
+    const { files } = event.currentTarget
 
+    if(!files) {
+      return
+    }
   }
 
   return (
